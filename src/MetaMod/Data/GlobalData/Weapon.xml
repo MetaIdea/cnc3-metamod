@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+	<WeaponTemplate
+		id="TiberiumKillerWeapon"
+		Name="TiberiumKillerWeapon"
+		RadiusDamageAffects="ALLIES ENEMIES NEUTRALS"
+		WeaponSpeed="9999" 
+		AttackRange="20000.0">
+		<Nuggets>
+			<DamageNugget
+				Damage="99998.0"
+				Radius="20000.0"
+				DelayTimeSeconds="0s"
+				DamageType="CANNON"
+				DeathType="EXTRA_5">
+				<SpecialObjectFilter
+					Rule="NONE">
+					<IncludeThing>TiberiumCrystal</IncludeThing>
+                    <IncludeThing>TiberiumCrystalBlue</IncludeThing>
+					<IncludeThing>TiberiumKillerCrate</IncludeThing>
+			    </SpecialObjectFilter>
+			</DamageNugget>			
+		</Nuggets>
+	</WeaponTemplate>
+
+</AssetDeclaration>
