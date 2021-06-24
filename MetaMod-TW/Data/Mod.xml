@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Includes>
+
+		<Include type="reference" source="DATA:static.xml" />
+		<Include type="reference" source="DATA:global.xml" />   
+		
+<!--   		<Include type="all" source="DATA:MetaModTW/Data/TW_Specific/InGameUISettingsCommon.xml" /> -->
+		
+		<Include type="reference" source="DATA:MetaModTW/Data/AdditionalMaps/MapMetaData_Global.xml" />
+<!-- 		<Include type="all" source="DATA:MetaModTW/Data/AdditionalMaps/MapMetaData.xml" />	 -->
+		
+		<!--GLOBALDATA-->		
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/LogicCommandSet.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Weapon.xml" /> 
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Upgrades.xml" /> 
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/SpecialPower.xml" /> 
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/PlayerPowerAndUnitAbilityButton.xml" />				
+
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Objects/PlayerSpellBook.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Objects/GenericCrateSpawner.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Objects/NoSuperweaponsCrate.xml" />				
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Objects/TiberiumCrystalInfinite.xml" /> 
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Objects/TiberiumCrystal.xml" /> 
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Objects/TiberiumCrystalBlue.xml" /> 
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Objects/TiberiumCrystalBlueInfinite.xml" /> 
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Objects/TiberiumCrystalInfiniteEnabler.xml" /> 		
+		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/Objects/TiberiumKillerCrate.xml" /> 		
+<!-- 		<Include type="all" source="DATA:MetaModTW/Data/GlobalData/TiberiumFields.xml" />  -->		
+		
+		<!--MetaControl-->
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/LogicCommand_MetaControl.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/LogicCommandSet_MetaControl.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/ObjectCreationList_MetaControl.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/SpecialPower_MetaControl.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Weapon_MetaControl.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Locomotor.xml" />
+<!-- 		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/PlayerPowerAndUnitAbilityButton_MetaControl.xml" />		 -->
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Upgrades_MetaControl.xml" />
+<!-- 		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Movies.xml" />	 -->
+		
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Menus/MetaCommandMenu.xml" />			
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Menus/MainTabMenu.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Menus/MetaCreditShop.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Menus/DiplomacyTabMenu.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Menus/PlayerPowerBarMenu.xml" />				
+		
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyPeriodicMasterChecker.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlTeamRelationsInitializator.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyCoordinateEvalHelper.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyCoordinateSpawner.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyCoordinateSpawner2.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyCounterBaseDummy.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyTimerCounterChecker.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyPeriodicMasterCheckerDelayer.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyPerHumanPlayerPeriodicChecker.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyMoney1.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyMoney10.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyMoney100.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyMoney1000.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyVictoryConditionHelper.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyScriptTimer.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyScriptTimerFast.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyTakeMoney.xml" />
+ 		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyOCLSpawnExtender.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyOCLSpawnExtenderWB.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyMiscDummys.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/ScriptHelper/Object_MetaControlDummyAttributeBooster.xml" />	
+	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIToggle/Object_MetaControlDummyEnemyAIOFFToggler.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIToggle/Object_MetaControlDummyEnemyAIOFF.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIToggle/Object_MetaControlDummyEnemyAIOFFKiller.xml" />		
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIToggle/Object_MetaControlDummyEveryAIOFFToggler.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIToggle/Object_MetaControlDummyEveryAIOFF.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIToggle/Object_MetaControlDummyEveryAIOFFKiller.xml" />			
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIBOOST/Object_MetaControlDummyAIBoostMoney.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIBOOST/Object_MetaControlDummyAIBoostUnitSpawner.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIBOOST/Object_MetaControlDummyAIBoostTogglerByForce.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIBOOST/Object_MetaControlDummyAIBoostTogglerByForceDelayer.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIBOOST/Object_MetaControlDummyAIBoostMoneyDelayer.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIBOOST/Object_MetaControlDummyAIBoostMoneyEnabler.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIBOOST/Object_MetaControlDummyAIBoostActivator.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/AIBOOST/Object_MetaControlDummyAIBoostAlliesActivator.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/MapRevealer/Object_MetaControlDummyMapRevealerToggler.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/MapRevealer/Object_MetaControlDummyMapRevealer.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Toggler/MapRevealer/Object_MetaControlDummyMapRevealerKiller.xml" />			
+		
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyPREActivator.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyGameSetupMaker.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyMoneyCrate.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyMoney5k.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyUnlimitedCameraHack.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyUnlimitedCameraHack2.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyLuaScriptRunner.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyTiberiumKillerSpawner.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyMoneyTransmitter.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyMoneyTransmitterDelayer.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyForceLuaScriptActivator.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyForceLuaScriptActivatorDelayer.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyPermanentMapRevealer.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyPermanentMapRevealerDelayer.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyMoneyImmediate.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyAICoControlToggler.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummySuperweaponOFF.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummySuperweaponOFFDelayer.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlGuardShieldEmitterFree.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyLuaEventTrigger.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/MeteorSpawner.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/HeroGeneralBooster.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/AICoControlTogglerByPlayerPower.xml" />
+<!-- 		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/WallGateMod.xml" />	 -->		
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyNAODRoundBasedHelper.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlDummyNAODNextWaveEnabler.xml" />		
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlCameraSetup.xml" />	
+		<Include type="all" source="DATA:MetaModTW/Data/MetaControl/Objects/Other/Object_MetaControlViewChanger.xml" />				
+		
+		<!--GUARDSHIELD-->
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/LogicCommand_GuardShield.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/LogicCommandSet_GuardShield.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/ObjectCreationList_GuardShield.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/Weapon_GuardShield.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/SpecialPower_GuardShield.xml" />
+<!-- 		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/UnitAbilityAndPlayerPowerButton_GuardShield.xml" />	 -->
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/GuardShield_Upgrades.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/Objects/Object_GuardShieldEmitter.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/Objects/Object_GuardShield.xml" />		
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/Objects/Object_ShieldRemoveHelper.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/Objects/Object_ShieldRemover.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/Objects/Object_GuardShieldAIModusDeactivator.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/GuardShield/Objects/Object_GuardShieldAIModusActivator.xml" />			
+		
+		<!--METATECHFACTION-->
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/LogicCommandSet_MetaTech.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/LogicCommand_MetaTech.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Upgrades.xml" />		
+<!-- 		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Structures/MetaTechConstructionYard.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Structures/MetaTechWarFactory.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Structures/MetaTechReclamatorHub.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Structures/MetaTechCommandPost.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Structures/MetaTechCrane.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Structures/MetaTechHangar.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Structures/MetaTechTechCenter.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Structures/MetaTechBarracks.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Structures/MetaTechMedicalBay.xml" /> -->
+<!-- 		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Units/MetaTechMCV.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/Units/MetaTechSuperAvatar.xml" />	 -->
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/ArmyDefMetaTech.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/OpeningMoves/MetaTechDefensiveOpeningMoves.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/OpeningMoves/MetaTechGuerillaOpeningMoves.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/OpeningMoves/MetaTechOffensiveOpeningMoves.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/OpeningMoves/MetaTechOptimalOpeningMoves.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/OpeningMoves/MetaTechOverlordOpeningMoves.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/Personalities/MetaTechDefensive.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/Personalities/MetaTechGuerilla.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/Personalities/MetaTechOffensive.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/Personalities/MetaTechOptimal.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/Personalities/MetaTechOverlord.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/States/MetaTechDefensiveStates.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/States/MetaTechGuerillaStates.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/States/MetaTechOffensiveStates.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/States/MetaTechOptimalStates.xml" />
+		<Include type="all" source="DATA:MetaModTW/Data/MetaTechFaction/SkirmishAI/States/MetaTechOverlordStates.xml" />
+
+
+		<!--MENUDATA-->
+		<Include type="all" source="ART:MetaModTW/Art/MainMenu/MainMenuTexture.xml" />
+
+		<!--ARTDATA-->
+		<Include type="all" source="ART:MetaModTW/Art/shield/FXSHLDABILITY.DIFFUSEMod.w3x" />
+		<Include type="all" source="ART:MetaModTW/Art/shield/FXSHLDABILITY.DISTORTIONMod.w3x" />
+		<Include type="all" source="ART:MetaModTW/Art/shield/FXSHLDABILITY_CTRMod.w3x" />
+		<Include type="all" source="ART:MetaModTW/Art/shield/FXSHLDABILITY_HRCMod.w3x" />
+		<Include type="all" source="ART:MetaModTW/Art/shield/FXSHLDABILITYMod.w3x" />
+		<Include type="all" source="ART:MetaModTW/Art/Buttons/MetaControl/MetaControl_art.xml" />
+		<Include type="all" source="ART:MetaModTW/Art/Buttons/MetaCreditShop/MetaCreditShop_art.xml" />			
+		<Include type="all" source="ART:MetaModTW/Art/Buttons/Diplomacy/Diplomacy_art.xml" />	
+		<Include type="all" source="ART:MetaModTW/Art/Buttons/GuardShield/GuardShield_art.xml" />
+<!-- 		<Include type="all" source="ART:MetaModTW/Art/TBCaptureFlag/TBCaptureFlag.xml" />	 -->
+		
+		<!--AUDIO-->		
+		<Include type="all" source="AUDIO:MetaModTW/Audio/Audio.xml" />			
+		
+	</Includes>
+	
+
+	
+</AssetDeclaration>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+	<LogicCommandSet
+		id="MetaMod_LCM_Connector_CommandSet">
+		<Cmd>Command_BeginCableSpan</Cmd>
+	</LogicCommandSet>
+	
+	<LogicCommandSet
+		id="LogicCircuitsBuildMenuCommandSet">
+		<Cmd>Command_BuildConnector</Cmd>
+	</LogicCommandSet>
+		
+</AssetDeclaration>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+<MapMetaData id="MetaMod_Map1" >  
+		<MapMetaData
+			BorderSize="10"
+			CRC="0"
+			Description="Map:!RemoveZoomLimitation/Desc"
+			DisplayName="!RemoveZoomLimits"
+			FileName="Data\maps\unofficial\!RemoveZoomLimits\!RemoveZoomLimits.map"
+			Height="70"
+			IsMultiplayer="true"
+			IsOfficial="false"
+			NumPlayers="2"
+			Width="70">
+			<StartPosition
+				Name="InitialCameraPosition">
+				<Position
+					x="0"
+					y="0"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_1_Start">
+				<Position
+					x="185.529"
+					y="296.87"
+					z="0"/>
+			</StartPosition>
+			<StartPosition
+				Name="Player_2_Start">
+				<Position
+					x="282.785"
+					y="199.851"
+					z="0"/>
+			</StartPosition>
+		</MapMetaData>
+</MapMetaData>	
+
+</AssetDeclaration>

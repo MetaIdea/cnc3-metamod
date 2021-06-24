@@ -1,0 +1,19 @@
+RULE:RandomCrates
+"no superweapons"
+End
+
+APT:InGameTickerOptionsNOT
+"In-Game Extra Options"
+end
+
+APT:ShowNewsNOT
+"no superweapons"
+end
+
+APT:ShowAdsNOT
+"use 60 fps"
+end
+
+MESSAGE:ExternalLUAScriptsLoaded
+"external scripts.lua loaded !"
+end

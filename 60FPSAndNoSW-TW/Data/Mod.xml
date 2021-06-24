@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+	<Includes>
+
+		<Include type="reference" source="DATA:static.xml" />
+		<Include type="reference" source="DATA:global.xml" />  
+		
+		<Include type="all" source="AdditionalMaps/MapMetaData.xml" />
+		<Include type="all" source="AdditionalMaps/MpGameRules.xml" />
+		<Include type="all" source="60FPS_Related.xml" />
+		<Include type="all" source="NoSW_Related.xml" />
+		
+	</Includes>
+
+</AssetDeclaration>

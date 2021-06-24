@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<W3DContainer id="NBTIBWALLHUB_D3" Hierarchy="NBTIBWALLHUB_D3">
+		<SubObject SubObjectID="NEWSKIN" BoneIndex="0">
+			<RenderObject>
+				<Mesh>NBTIBWALLHUB_D3.NEWSKIN</Mesh>
+			</RenderObject>
+		</SubObject>
+	</W3DContainer>
+</AssetDeclaration>

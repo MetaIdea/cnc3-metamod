@@ -1,0 +1,196 @@
+			<AttachUpdate
+				id="ModuleTag_Attach"
+				Range="10.0"
+				Teleport="true"
+				UseGeometry="true"
+				DetachWhenParentHealed="true">
+				<ObjectFilter
+					Rule="ALL">
+					<ExcludeThing>AlienCrystalShield</ExcludeThing>
+				</ObjectFilter>
+			</AttachUpdate>
+			
+AutoPickUpUpdate
+PickupStuffUpdate
+CritterEmitterUpdate
+
+AttachUpdate
+DockUpdate
+RailedTransportDockUpdate
+SlavedUpdate
+SpawnBehaviorModuleData
+
+MetaBaseBody
+MetaBody
+MetaCityBody
+CombinedInfoModule
+BridgeBuilderBehavior
+Building
+
+ModelConditionSpecialAbilityUpdate
+MonitorConditionUpdate
+MonitorSpecialPowerTimerUpdate
+OCLMonitorUpdate
+OCLUpdate
+
+DoCommandUpgrade
+GettingBuilt für docking plätze spawn
+SpecialEnemySenseUpdate
+ThreatFinderUpdate TACTICAL_MARKER THREAT_FINDER
+EvaEvents
+
+WallHubBehavior
+WallUpgrade
+
+ReplaceSelfUpgrade
+
+RefundDie
+
+ObjectCreationUpgrade
+ObjectDefectionHelper
+ObjectGuardingHelper
+ObjectHelper
+ObjectRecoveryHelper
+ObjectRepulsorHelper
+ObjectSMCHelper
+ObjectWeaponStatusHelper
+
+ModelConditionUpgrade
+
+
+
+
+DelayedUpgrade
+
+
+ATTACHED (AttachUpdate)
+MOUNTED (ToggleMountedSpecialAbilityUpdate)
+COMBINED_PARENT (CombineSpecialPower)
+COMBINED_CHILD
+COMBINED_ATTACHED
+
+
+
+	<xs:simpleType name="AttachUpdateFlagsType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="NONE" />
+			<xs:enumeration value="FIND_BEST_PARENT" />
+			<xs:enumeration value="UNCONTAINED_ONLY" />
+			<xs:enumeration value="SAME_PLAYER_ONLY" />
+			<xs:enumeration value="ONE_ATTACH_PER_PARENT" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="AttachUpdateFlagsBitFlags">
+		<xs:list itemType="AttachUpdateFlagsType"></xs:list>
+	</xs:simpleType>
+
+	<xs:complexType name="AttachUpdateModuleData">
+		<xs:complexContent>
+			<xs:extension base="UpdateModuleData">
+				<xs:sequence>
+					<xs:element name="ObjectFilter" type="ObjectFilter" minOccurs="0" maxOccurs="1" />
+				</xs:sequence>
+				<xs:attribute name="ParentStatus" type="ObjectStatusBitFlags" />
+				<xs:attribute name="ForbiddenParentStatus" type="ObjectStatusBitFlags" />
+				<xs:attribute name="Range" type="SageReal" />
+				<!-- if we are closer than CloseEnoughRange we will be considered attached. -->
+				<xs:attribute name="CloseEnoughRange" type="SageReal" default="1000.0" />
+				<xs:attribute name="ShouldStickToParent" type="SageBool" default="true" />
+				<xs:attribute name="Teleport" type="SageBool" default="true" />
+				<xs:attribute name="UseGeometry" type="SageBool" default="true" />
+				<xs:attribute name="DetachWhenParentHealed" type="SageBool" default="false" />
+				<xs:attribute name="DetachWhenParentOutOfSlavedRange" type="SageBool" default="false" />
+				<xs:attribute name="RequireFullyHealedToDetach" type="SageBool" default="false" />
+				<xs:attribute name="ScanForNewParentWhenDetached" type="SageBool" default="false" />
+				<xs:attribute name="ParentOwnerAttachmentEvaEvent" type="EvaEventIDType" />
+				<xs:attribute name="ParentAllyAttachmentEvaEvent" type="EvaEventIDType" />
+				<xs:attribute name="ParentEnemyAttachmentEvaEvent" type="EvaEventIDType" />
+				<xs:attribute name="AttachFXList" type="FXListRef" />
+				<xs:attribute name="ParentOwnerDiedEvaEvent" type="EvaEventIDType" />
+				<xs:attribute name="ParentAllyDiedEvaEvent" type="EvaEventIDType" />
+				<xs:attribute name="ParentEnemyDiedEvaEvent" type="EvaEventIDType" />
+				<xs:attribute name="InitialAttachDelay" type="Time" />
+				<xs:attribute name="IdleScanDelay" type="Time" default="0.35s" />
+				<xs:attribute name="CanAttachToHordeMembers" type="SageBool" default="false" />
+				<xs:attribute name="Flags" type="AttachUpdateFlagsBitFlags" default="NONE" />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>
+
+
+
+	<GameObject
+		id="AIHoldBeaconAttached"
+		Side="Neutral"
+		EditorSorting="UNIT"
+		CommandSet="EmptyCommandSet"
+		IsTrainable="false"
+		KindOf="CAN_CAST_REFLECTIONS BEACON NO_COLLIDE IGNORE_FOR_VICTORY UNATTACKABLE NOT_AUTOACQUIRABLE DO_NOT_CLASSIFY INERT"
+		RadarPriority="UNIT"
+		EditorName="AIHoldBeaconAttached">
+		<DisplayName>CONTROLBAR:Beacon</DisplayName>
+		<ArmorSet
+			Armor="NoArmor" />
+		<EquivalentTo>AIHoldBeacon</EquivalentTo>
+		<Draws>
+			<ScriptedModelDraw
+				id="ModuleTag_Draw"
+				OkToChangeModelColor="true">
+				<ModelConditionState
+					ParseCondStateType="PARSE_DEFAULT">
+					<Model
+						Name="" />
+				</ModelConditionState>
+			</ScriptedModelDraw>
+		</Draws>
+		<Behaviors>
+			<AttachUpdate
+				id="ModuleTag_Attach"
+				Range="10.0"
+				Flags="STICK_TO_PARENT TELEPORT USE_GEOMETRY DIE_WHEN_DETACH_ALWAYS" >
+			</AttachUpdate>
+			<DestroyDie
+				id="ModuleTag_Die">
+				<DieMuxData
+					DeathTypes="ALL" />
+			</DestroyDie>
+		</Behaviors>
+		<Body>
+			<ActiveBody
+				id="ModuleTag_Body"
+				MaxHealth="100.0" />
+		</Body>
+		<Geometry
+			IsSmall="true">
+			<Shape
+				Type="CYLINDER"
+				MajorRadius="7.0"
+				Height="13.0"/>
+		</Geometry>
+		<CrusherInfo
+			id="id_CrusherInfo"
+			CrushableLevel="0" />
+	</GameObject>
+	
+	
+  <xs:complexType name="CombinedInfoModuleData">
+	  <xs:complexContent>
+		  <xs:extension base="CreateModuleData">
+			  <xs:sequence></xs:sequence>
+			  <xs:attribute name="DockingBone" type="xs:string" />
+		  </xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	
+	<xs:complexType name="CombineSpecialPowerModuleData">
+		<xs:complexContent>
+			<xs:extension base="SpecialPowerModuleData">
+				<xs:sequence>
+					<xs:element name="CombineWithObjectFilter" type="ObjectFilter" minOccurs="0" maxOccurs="1" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

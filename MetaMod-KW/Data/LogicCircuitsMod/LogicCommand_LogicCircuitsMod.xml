@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetDeclaration xmlns="uri:ea.com:eala:asset">
+
+	<LogicCommand
+		id="Command_BuildConnector"
+		Type="CONSTRUCTION_YARD_CONSTRUCT"
+		Options="">
+		<Object>MetaMod_LCM_Connector</Object>
+	</LogicCommand>
+	
+	<LogicCommand
+		id="Command_BeginCableSpan"
+		Type="DOZER_CONSTRUCT"
+		Options="OPTION_ONE">
+		<Object>MetaMod_LCM_Connector</Object>
+	</LogicCommand>
+		
+</AssetDeclaration>
