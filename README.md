@@ -15,3 +15,5 @@ New features (small selection):
 Full preview:
 
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/yBgxwONhCt0/0.jpg)](https://www.youtube.com/watch?v=yBgxwONhCt0)
+
+![MainPrev](https://user-images.githubusercontent.com/26028969/123512735-719e5e80-d689-11eb-8eae-b8a273a8d339.jpg)
